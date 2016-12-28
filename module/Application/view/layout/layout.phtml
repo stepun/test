@@ -1,0 +1,83 @@
+<?php echo $this->doctype(); ?>
+
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <?php echo $this->headTitle($this->translate('Apps Store & Cash'))->setSeparator(' - ')->setAutoEscape(false) ?>
+
+        <?php echo $this->headMeta()
+            ->appendName('viewport', 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
+            ->appendHttpEquiv('X-UA-Compatible', 'IE=edge')
+        ?>
+
+        <!-- Le styles -->
+        <?php echo $this->headLink(array('rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . '/img/favicon.ico'))
+                        ->prependStylesheet($this->basePath() . '/css/style.css')
+                        ->prependStylesheet($this->basePath() . '/css/bootstrap-theme.min.css')
+                        ->prependStylesheet($this->basePath() . '/css/bootstrap.min.css') ?>
+
+        <!-- ================== BEGIN BASE CSS STYLE ================== -->
+        <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+        <link href="/assets/plugins/jquery-ui/themes/base/minified/jquery-ui.min.css" rel="stylesheet" />
+        <link href="/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="/assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+        <link href="/assets/css/animate.min.css" rel="stylesheet" />
+        <link href="/assets/css/style.css" rel="stylesheet" />
+        <link href="/assets/css/style-responsive.min.css" rel="stylesheet" />
+        <link href="/assets/css/theme/default.css" rel="stylesheet" id="theme" />
+
+        <!-- ================== END BASE CSS STYLE ================== -->
+
+        <!-- ================== BEGIN PAGE LEVEL STYLE ================== -->
+        <link href="/assets/plugins/jquery-jvectormap/jquery-jvectormap-1.2.2.css" rel="stylesheet" />
+        <link href="/assets/plugins/bootstrap-datepicker/css/datepicker.css" rel="stylesheet" />
+        <link href="/assets/plugins/bootstrap-datepicker/css/datepicker3.css" rel="stylesheet" />
+        <link href="/assets/plugins/gritter/css/jquery.gritter.css" rel="stylesheet" />
+        <!-- ================== END PAGE LEVEL STYLE ================== -->
+
+        <script data-main="<?= $this->basePath() . '/js/require.config.js' ?>" src="<?= $this->basePath() . '/js/include/require.js' ?>"></script>
+        <!-- Scripts -->
+        <?php echo $this->headScript()
+            ->prependFile($this->basePath() . '/js/respond.min.js', 'text/javascript', array('conditional' => 'lt IE 9',))
+            ->prependFile($this->basePath() . '/js/html5shiv.js',   'text/javascript', array('conditional' => 'lt IE 9',))
+        ; ?>
+
+    </head>
+    <body class="pace-done">
+    <div class="pace  pace-inactive"><div class="pace-progress" data-progress-text="100%" data-progress="99" style="width: 100%;">
+            <div class="pace-progress-inner"></div>
+        </div>
+        <div class="pace-activity"></div>
+    </div>
+
+    <div id="page-loader" class="fade in hide"><span class="spinner"></span></div>
+
+
+    <div id="page-container" class="fade page-sidebar-fixed page-header-fixed in">
+        <div id="header" class="header navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <!-- begin mobile sidebar expand / collapse button -->
+                <div class="navbar-header">
+                    <a href="index.html" class="navbar-brand"><img src="/img/logo.png"></a>
+                </div>
+                <!-- end mobile sidebar expand / collapse button -->
+
+                <!-- begin header navigation right -->
+                <ul class="nav navbar-nav navbar-right">
+
+                </ul>
+                <!-- end header navigation right -->
+            </div>
+        </div>
+        <div class="container">
+            <?php echo $this->content; ?>
+            <hr>
+            <footer>
+                <p>&copy; 2013 - <?php echo date('Y') ?> by Store&Cash Ltd. <?php echo $this->translate('All rights reserved.') ?></p>
+            </footer>
+        </div> <!-- /container -->
+    </div>
+        <?php echo $this->inlineScript() ?>
+
+    </body>
+</html>
