@@ -5,7 +5,9 @@
 
 ## Стек технологий
 PHP 5+, ZendFramework 2
+
 jQuery, Marionette.Backbone, requirejs
+
 git
 
 ## Исходные данные
@@ -27,12 +29,16 @@ API ключи:
 PUBLIC_KEY=cb3fd6aebc055948aed19e546a03fdb3
 PRIVATE_KEY=c6f6d933ee92c1e27862a15deccfabf2
 
-### настройка проекта
+### Настройка проекта
 Для работы проекта необходимо:
+
 1. Сделать форк репозитория https://github.com/stepun/test
+
 2. Скачать на рабочую станцию репозиторий
+
 3. Cкачать библиотеку composer https://getcomposer.org/ в корень репозитория
-4. Выполнить команду 
+
+4. Выполнить команду
 ```
 php composer.phar install
 ```
