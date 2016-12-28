@@ -42,7 +42,7 @@ PRIVATE_KEY=c6f6d933ee92c1e27862a15deccfabf2
 ```
 php composer.phar install
 ```
-5. После установки всех зависимостей проект будет готов к работе
+После установки всех зависимостей проект будет готов к работе
 
 ## Задача
 Реализовать вывод на экран списка контрагентов https://gist.github.com/stepun/019ccab787d745abecbf#list-company
