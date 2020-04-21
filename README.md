@@ -4,7 +4,7 @@
 ознакомление со структурой проекта и проверка навыков соискателей
 
 ## Стек технологий
-PHP 5+, ZendFramework 2
+PHP 5.4+, ZendFramework 2
 
 jQuery, Marionette.Backbone, requirejs
 
