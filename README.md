@@ -4,54 +4,24 @@
 ознакомление со структурой проекта и проверка навыков соискателей
 
 ## Стек технологий
-PHP 5.4+, ZendFramework 2
-
-jQuery, Marionette.Backbone, requirejs
-
+PHP 5.4+, ZendFramework 2.4.8
 git
 
 ## Исходные данные
 Собственно данный репозиторий.
 
-Для реализации тестового задания используется тестовый аккаунт http://storencash.com 
+Для реализации тестового задания используется тестовый аккаунт https://my2can.com 
 логин: storencashdemo@gmail.com
 пароль: demodemo
 
-Шаблоны элементов страниц http://seantheme.com/color-admin-v1.9/admin/html/index_v2.html
-все библиотеки и таблицы стилей уже присоеденены к проекту
-
-Для получения данных (API) с сервера использовать библиотеку https://github.com/stepun/snc-sdk-php
-она уже присоеденена к проекту
-
-Описание API https://gist.github.com/stepun/8c09fa528356c4de8fb8
+Описание API https://github.com/my2can/api-2can-inventory/wiki/
 
 API ключи: 
 PUBLIC_KEY=cb3fd6aebc055948aed19e546a03fdb3
 PRIVATE_KEY=c6f6d933ee92c1e27862a15deccfabf2
 
-### Настройка проекта
-Для работы проекта необходимо:
-
-1. Сделать форк репозитория https://github.com/stepun/test
-
-2. Скачать на рабочую станцию репозиторий
-
-3. Cкачать библиотеку composer https://getcomposer.org/ в корень репозитория
-
-4. Выполнить команду
-```
-php composer.phar install
-```
-После установки всех зависимостей проект будет готов к работе
-
 ## Задача
-Реализовать вывод на экран списка контрагентов https://gist.github.com/stepun/019ccab787d745abecbf#list-company
-Также реализовать интефейс ввода нового конрагента https://gist.github.com/stepun/019ccab787d745abecbf#add-company
+Реализовать добавление новой номенклатуры https://github.com/my2can/api-2can-inventory/wiki/API-Product#add-product
+Реализовать вывод списка добавленных номенклатур https://github.com/my2can/api-2can-inventory/wiki/API-Product#list-product
 
-Все должно быть реализовано подгрузкой JS библиотек через requirejs
-Список контрагентов загружается исключительно после загрузки страницы т.е. AJAX с использованием фреймворка Marionette.Backbone
-Добавление нового контрагента реализовать без перезагрузки страницы
-все js скрипты должны быть расположены ./public/js/app
-все PHP обработчики должны быть написаны в структуре предоставленного проекта (./module/Application/src/Application/Controller/IndexController.php)
-
-результаты работы предоставить на собственной тестовой площадке. Предоставить доступ к git.
+результаты работы предоставить в git.
